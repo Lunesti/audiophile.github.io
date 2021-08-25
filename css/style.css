@@ -1,5 +1,118 @@
 body {
-  background: #000;
+  background: #FFF;
+  width: 1440px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---- couleur --- */
+nav ul,
+nav p {
+  color: #FFF;
+}
+
+* {
+  font-family: arial, sans-serif;
+}
+
+/* ----- Header ----- */
+header {
+  position: relative;
+}
+
+figure {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+nav {
+  height: 100px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+nav li {
+  padding-right: 20px;
+}
+
+nav,
+header figcaption {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  width: 70%;
+  left: 15%;
+}
+
+header figcaption {
+  display: block;
+  color: #FFF;
+  width: 380px;
+}
+
+figcaption span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+/*---- page d'accueil ------ */
+main {
+  width: 70%;
+  height: 100px;
+  margin-left: 15%;
+}
+
+section.shop {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+figure.headphone {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 100px;
+  background: #F1F1F1;
+  border-radius: 6px;
+}
+
+.headphone figcaption {
+  position: absolute;
+  top: 200px;
+  text-align: center;
+}
+
+.name-product {
+  color: black;
+}
+
+.headphone img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -55px;
 }
 
 /*# sourceMappingURL=style.css.map */
