@@ -96,74 +96,77 @@ h1 {
 /*---- page d'accueil ------ */
 
 section.shop {
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.headphone,
-.speakers,
-.earphone {
     position: relative;
     display: flex;
-    justify-content: center;
-    width: 30%;
-    background: #F1F1F1;
-    border-radius: 10px;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+}
+
+.shop figure {
+    height: 400px;
 }
 
 .headphone figcaption,
 .speakers figcaption,
 .earphone figcaption {
-    position: absolute;
-    top: 70px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50%;
+    background: #F1F1F1;
+    border-radius: 10px;
+    margin-top: 200px;
 }
 
-.name-product {
-    color: black;
-    font-weight: 700;
-    text-transform: uppercase;
+.shop figcaption p {
+    margin: 100px 0 0 0;
 }
 
-.headphone img,
-.speakers img,
-.earphone img {
+figcaption p:nth-child(2) {
+    margin-top: 0;
+}
+
+.shop img {
     position: absolute;
-    width: 100%;
+    top: 60%;
+    left: 50%;
+    /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%);
+    /* décalage de 50% de sa propre taille */
+    z-index: 10;
+    width: 90%;
     height: auto;
 }
 
 
 /* --- banniere des produits ----- */
 
-.products .zx9-speaker {
+.products .zx9-speaker,
+.product .zx7-speaker {
     position: relative;
+    border-radius: 10px;
+    display: flex;
+}
+
+.products .zx9-speaker {
     background: #d87c49;
     width: 100%;
     height: 500px;
-    border-radius: 10px;
-    display: flex;
     align-items: flex-end;
-}
-
-.products .zx7-speaker {
-    position: relative;
-    border-radius: 10px;
-    display: flex;
 }
 
 .zx7-speaker {
     margin-top: 30px;
-    position: relative;
-    display: flex;
     align-items: center;
 }
 
 .zx7-speaker figcaption {
     position: absolute;
     text-transform: uppercase;
-    left: 5%;
+    left: 100px;
 }
 
 .zx7-speaker h3 {
@@ -186,21 +189,28 @@ section.shop {
 .zx9-speaker .img-speaker {
     position: absolute;
     z-index: 3;
-    width: 35%;
+    width: 33%;
     left: 10%;
+    bottom: -6px;
 }
 
 .zx9-speaker h3 {
+    margin-top: 0;
     text-transform: uppercase;
     font-size: 2.5em;
+    text-align: left;
 }
 
 .zx9-speaker figcaption {
     position: absolute;
     right: 10%;
     color: $primary-color;
-    height: 88%;
+    height: 100%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
 
 .zx9-speaker figcaption p {
