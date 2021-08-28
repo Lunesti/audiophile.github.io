@@ -40,7 +40,7 @@ header {
     position: relative;
 }
 
-figure {
+header figure {
     position: relative;
     display: flex;
     align-items: center;
@@ -104,7 +104,18 @@ section.shop {
 }
 
 .shop figure {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
     height: 400px;
+}
+
+.headphone,
+.earphone {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .headphone figcaption,
@@ -114,7 +125,7 @@ section.shop {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 315px;
     height: 50%;
     background: #F1F1F1;
     border-radius: 10px;
@@ -144,11 +155,22 @@ figcaption p:nth-child(2) {
 
 /* --- banniere des produits ----- */
 
+section .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* ---- 1ere bannière --- */
+
 .products .zx9-speaker,
 .product .zx7-speaker {
     position: relative;
     border-radius: 10px;
     display: flex;
+    align-items: center;
+    margin: auto;
 }
 
 .products .zx9-speaker {
@@ -156,34 +178,6 @@ figcaption p:nth-child(2) {
     width: 100%;
     height: 500px;
     align-items: flex-end;
-}
-
-.zx7-speaker {
-    margin-top: 30px;
-    align-items: center;
-}
-
-.zx7-speaker figcaption {
-    position: absolute;
-    text-transform: uppercase;
-    left: 100px;
-}
-
-.zx7-speaker h3 {
-    font-size: 1.8em;
-}
-
-.zx7-speaker img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.circle {
-    position: absolute;
-    width: 85%;
-    top: -20px;
-    right: 300px;
 }
 
 .zx9-speaker .img-speaker {
@@ -215,4 +209,72 @@ figcaption p:nth-child(2) {
 
 .zx9-speaker figcaption p {
     line-height: 30px;
+}
+
+.circle {
+    position: absolute;
+    width: 85%;
+    top: -20px;
+    right: 300px;
+}
+
+
+/* ---- 2ieme bannière ----- */
+
+.zx7-speaker {
+    position: relative;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.zx7-speaker figcaption {
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 20%;
+}
+
+.zx7-speaker h3 {
+    font-size: 1.8em;
+}
+
+.zx7-speaker img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* ---- 3ieme et 4ieme bannière ---- */
+
+.earphones-product,
+.products figure:nth-child(4) {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.earphones-product {
+    margin: 50px auto;
+}
+
+.products figure:nth-child(4) figcaption {
+    text-align: center;
+}
+
+.products figure:nth-child(3) img,
+.earphones-link,
+.products figure:nth-child(4) img,
+.products figure:nth-child(4) figcaption {
+    width: 48%;
+    border-radius: 10px;
+}
+
+.earphones-link {
+    background-color: grey;
+}
+
+.earphones-link>* {
+    margin-left: 30%;
 }
