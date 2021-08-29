@@ -76,7 +76,7 @@ header figcaption {
   width: 380px;
 }
 
-figcaption span {
+header figcaption span {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: rgba(255, 255, 255, 0.3);
@@ -262,6 +262,30 @@ section .products {
 
 .earphones-link > * {
   margin-left: 30%;
+}
+
+.products figure:nth-child(4) figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.products figure:nth-child(4) figcaption span {
+  color: #C69076;
+}
+
+.products figure:nth-child(4) figcaption h3 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.products figure:nth-child(4) figcaption p {
+  font-size: 0.9em;
+  width: 90%;
+  margin-right: 10%;
+  line-height: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
