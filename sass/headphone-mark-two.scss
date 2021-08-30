@@ -1,0 +1,150 @@
+body {
+    background: #fff;
+    width: 1440px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+nav {
+    background: #000;
+    height: 100px;
+}
+
+
+/* ---- couleur --- */
+
+$primary-color: #fff;
+nav ul,
+nav p {
+    color: $primary-color;
+}
+
+$white-opacity: rgba(255, 255, 255, 0.3);
+* {
+    font-family: arial, sans-serif;
+}
+
+main {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
+
+
+/* ----- Header ----- */
+
+header {
+    position: relative;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+nav li {
+    padding-right: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+    width: 70%;
+    left: 15%;
+}
+
+section.headphone-mark-two {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section .return-to-home {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+    color: grey;
+}
+
+section.headphone-mark-two div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.headphone-mark-two div figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+}
+
+section.headphone-mark-two figure figcaption span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: orange;
+}
+
+section.headphone-mark-two div figure {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    border-radius: 10px;
+}
+
+section.headphone-mark-two div figcaption,
+section.headphone-mark-two div img {
+    width: 45%;
+}
+
+section.headphone-mark-two div figcaption h3 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+section.headphone-mark-two div figcaption p {
+    font-size: 0.9em;
+}
+
+section.headphone-mark-two div figcaption p.price {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+section.headphone-mark-two div figcaption button {
+    display: inline;
+}
+
+section.headphone-mark-two div figcaption div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section.headphone-mark-two div figcaption div div.quantity {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    border-radius: 5px;
+    width: 100px;
+}
+
+section.headphone-mark-two div figcaption div div.quantity span {
+    color: $primary-color;
+    margin: auto;
+}

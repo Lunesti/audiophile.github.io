@@ -108,8 +108,8 @@ section.shop {
 
 .headphone,
 .earphone {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .headphone figcaption,
@@ -292,13 +292,22 @@ section .products {
 /* --- footer ---- */
 footer {
   width: 100%;
-  height: 250px;
+  height: 300px;
   background: #000;
   display: flex;
+  position: relative;
+}
+
+footer div .border {
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 5px;
+  background-color: yellow;
+  left: 15%;
 }
 
 footer div:nth-child(1) {
-  background-color: Yellow;
   margin-left: 15%;
   height: 100%;
   width: 35%;
@@ -307,14 +316,57 @@ footer div:nth-child(1) {
   justify-content: center;
 }
 
-footer div:nth-child(2) {
+footer div.nav-contact {
   width: 35%;
-  background-color: red;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+footer div:nth-child(1) p:nth-child(2) {
+  font-weight: 700;
+  color: #FFF;
+  font-size: 1.4em;
+  margin: 0;
+  width: 110px;
+}
+
+footer div .copyright {
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 700;
+}
+
+footer div .audiophile {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.9em;
+}
+
+footer div ul {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style: none;
+}
+
+footer div ul li {
+  color: #FFF;
+  font-size: 0.9em;
+  font-weight: 700;
+  text-transform: uppercase;
   text-align: right;
+  padding-left: 25px;
+}
+
+footer div.social-network {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+footer div.social-network:nth-child(2),
+footer div.social-network:nth-child(2) {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
