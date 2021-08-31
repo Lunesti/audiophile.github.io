@@ -1,196 +1,420 @@
-body {
-    background: #fff;
-    width: 1440px;
-    margin: auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-header,
-nav {
-    background: #000;
-    height: 100px;
-}
-
-
-/* ---- couleur --- */
-
-$primary-color: #fff;
-nav ul,
-nav p {
-    color: $primary-color;
-}
-
-$white-opacity: rgba(255, 255, 255, 0.3);
-* {
-    font-family: arial, sans-serif;
-}
-
-main {
-    width: 70%;
-    height: auto;
-    margin-left: 15%;
-}
-
-
-/* ----- Header ----- */
-
-header {
-    position: relative;
-}
-
-nav {
-    justify-content: space-between;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-nav li {
-    padding-right: 20px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    z-index: 999;
-    width: 70%;
-    left: 15%;
-}
-
-section.headphone-mark-two {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-section .return-to-home {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 0;
-    color: grey;
-}
-
-section.headphone-mark-two figure {
-    display: flex;
-    justify-content: space-between;
-}
-
-section.headphone-mark-two figure figcaption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    text-align: left;
-}
-
-section.headphone-mark-two figure figcaption span {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: orange;
-}
-
-section.headphone-mark-two figure {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    border-radius: 10px;
-}
-
-section.headphone-mark-two figure figcaption,
-section.headphone-mark-two figure img {
-    width: 45%;
-    border-radius: 10px;
-}
-
-section.headphone-mark-two figure figcaption h3 {
-    text-transform: uppercase;
-    font-size: 2.5em;
-}
-
-section.headphone-mark-two figure figcaption p,
-.content .features p,
-.content .box .box-content {
-    font-size: 0.9em;
-}
-
-section.headphone-mark-two figure figcaption p.price {
-    font-weight: bold;
-    font-size: 1em;
-}
-
-section.headphone-mark-two figure figcaption button {
-    display: inline;
-}
-
-section.headphone-mark-two figure figcaption div {
-    display: flex;
-    justify-content: flex-start;
-}
-
-section.headphone-mark-two figure figcaption div div.quantity {
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: grey;
-    border-radius: 5px;
-    width: 100px;
-}
-
-section.headphone-mark-two figure figcaption div div.quantity span {
-    color: $primary-color;
-    margin: auto;
-}
-
-
-/* ----- Features and Box ----- */
-
-.content {
-    margin-top: 100px;
-    display: flex;
-    width: 100%;
-}
-
-.content .features {
-    width: 55%;
-}
-
-.content .features p {
-    line-height: 23px;
-}
-
-.content .box {
-    width: 45%;
-}
-
-.content .box .box-content {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.content .box .box-content p {
-    margin-bottom: 0;
-}
-
-.content .box .box-content p span {
-    margin-right: 20px;
-}
-
-.content .box .box-content h3,
-.content .features h3 {
-    text-transform: uppercase;
-    font-size: 2.2em;
-}
+    body {
+        background: #fff;
+        width: 1440px;
+        margin: auto;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    header,
+    nav {
+        background: #000;
+        height: 100px;
+    }
+    /* ---- couleur --- */
+    
+    $primary-color: #fff;
+    nav ul,
+    nav p {
+        color: $primary-color;
+    }
+    
+    $white-opacity: rgba(255, 255, 255, 0.3);
+    * {
+        font-family: arial, sans-serif;
+    }
+    
+    main {
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+    }
+    /* ----- Header ----- */
+    
+    header {
+        position: relative;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        text-transform: uppercase;
+    }
+    
+    nav li {
+        padding-right: 20px;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 999;
+        width: 70%;
+        left: 15%;
+    }
+    
+    section.headphone-mark-two {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    section .return-to-home {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+        color: grey;
+    }
+    
+    section.headphone-mark-two figure {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    section.headphone-mark-two figure figcaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        text-align: left;
+    }
+    
+    section.headphone-mark-two figure figcaption span {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: orange;
+    }
+    
+    section.headphone-mark-two figure {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        border-radius: 10px;
+    }
+    
+    section.headphone-mark-two figure figcaption,
+    section.headphone-mark-two figure img {
+        width: 45%;
+        border-radius: 10px;
+    }
+    
+    section.headphone-mark-two figure figcaption h3 {
+        text-transform: uppercase;
+        font-size: 2.5em;
+    }
+    
+    section.headphone-mark-two figure figcaption p,
+    .content .features p,
+    .content .box .box-content {
+        font-size: 0.9em;
+    }
+    
+    section.headphone-mark-two figure figcaption p.price {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    section.headphone-mark-two figure figcaption button {
+        display: inline;
+    }
+    
+    section.headphone-mark-two figure figcaption div {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    section.headphone-mark-two figure figcaption div div.quantity {
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: grey;
+        border-radius: 5px;
+        width: 100px;
+    }
+    
+    section.headphone-mark-two figure figcaption div div.quantity span {
+        color: $primary-color;
+        margin: auto;
+    }
+    /* ----- Features and Box ----- */
+    
+    .content {
+        margin-top: 100px;
+        display: flex;
+        width: 100%;
+    }
+    
+    .content .features {
+        width: 55%;
+    }
+    
+    .content .features p {
+        line-height: 23px;
+    }
+    
+    .content .box {
+        width: 45%;
+    }
+    
+    .content .box .box-content {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .content .box .box-content p {
+        margin-bottom: 0;
+    }
+    
+    .content .box .box-content p span {
+        margin-right: 20px;
+    }
+    
+    .content .box .box-content h3,
+    .content .features h3 {
+        text-transform: uppercase;
+        font-size: 2.2em;
+    }
+    /* ----- les 3 images ----- */
+    
+    section.images {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        margin-top: 100px;
+        justify-content: space-between;
+    }
+    
+    section.images div {
+        width: 43%;
+        height: 100%;
+    }
+    
+    section.images figure {
+        height: 100%;
+        width: 58%;
+    }
+    
+    section.images div figure {
+        width: 100%;
+    }
+    
+    section.images div figure img,
+    section.images figure img {
+        border-radius: 10px;
+    }
+    
+    section.images div figure img {
+        width: 95%;
+    }
+    
+    section.images div figure img:nth-child(2) {
+        margin-top: 5%;
+    }
+    
+    section.images figure img {
+        width: 100%;
+    }
+    
+    section.images figure,
+    section.images div figure {
+        margin: 0;
+    }
+    
+    section.other-product {
+        h3 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .products {
+            display: flex;
+            justify-content: space-between;
+            figure {
+                margin: 0;
+                width: 30%;
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+                figcaption {
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    /* ---- Shop ---- */
+    
+    section.shop {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 400px;
+        figure {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            justify-content: space-between;
+            height: 400px;
+            img {
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                /* à 50%/50% du parent référent */
+                transform: translate(-50%, -50%);
+                /* décalage de 50% de sa propre taille */
+                z-index: 10;
+                width: 90%;
+                height: auto;
+            }
+            figcaption {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 315px;
+                height: 50%;
+                background: #F1F1F1;
+                border-radius: 10px;
+                margin-top: 200px;
+                p:nth-child(1) {
+                    margin-top: 100px;
+                }
+                p:nth-child(2) {
+                    margin: 0;
+                }
+            }
+        }
+        figure:nth-child(1),
+        figure:nth-child(3) {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+    /* ---- 3ieme et 4ieme bannière ---- */
+    
+    .products-description {
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-between;
+        img,
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            width: 48%;
+            border-radius: 10px;
+            span {
+                color: #C69076;
+            }
+            h3 {
+                text-transform: uppercase;
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 0.9em;
+                width: 90%;
+                margin-right: 10%;
+                line-height: 25px;
+            }
+        }
+    }
+    /* --- footer ---- */
+    
+    footer {
+        width: 100%;
+        height: 300px;
+        background: #000;
+        display: flex;
+        position: relative;
+    }
+    
+    footer div .border {
+        position: absolute;
+        top: 0;
+        width: 90px;
+        height: 5px;
+        background-color: yellow;
+        left: 15%;
+    }
+    
+    footer div:nth-child(1) {
+        margin-left: 15%;
+        height: 100%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    footer div.nav-contact {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        ;
+    }
+    
+    footer div:nth-child(1) p:nth-child(2) {
+        font-weight: 700;
+        color: $primary-color;
+        font-size: 1.4em;
+        margin: 0;
+        width: 110px;
+    }
+    
+    footer div .copyright {
+        color: $white-opacity;
+        font-weight: 700;
+    }
+    
+    footer div .audiophile {
+        color: $white-opacity;
+        font-size: 0.9em;
+    }
+    
+    footer div ul {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    footer div ul li {
+        color: $primary-color;
+        font-size: 0.9em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+        padding-left: 25px;
+    }
+    
+    footer div.social-network {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+    }
+    
+    footer div.social-network:nth-child(2),
+    footer div.social-network:nth-child(2) {
+        visibility: hidden;
+    }
