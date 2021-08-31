@@ -80,12 +80,12 @@ section .return-to-home {
     color: grey;
 }
 
-section.headphone-mark-two div {
+section.headphone-mark-two figure {
     display: flex;
     justify-content: space-between;
 }
 
-section.headphone-mark-two div figcaption {
+section.headphone-mark-two figure figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,42 +99,45 @@ section.headphone-mark-two figure figcaption span {
     color: orange;
 }
 
-section.headphone-mark-two div figure {
+section.headphone-mark-two figure {
     display: flex;
     justify-content: space-between;
     margin: 0;
     border-radius: 10px;
 }
 
-section.headphone-mark-two div figcaption,
-section.headphone-mark-two div img {
+section.headphone-mark-two figure figcaption,
+section.headphone-mark-two figure img {
     width: 45%;
+    border-radius: 10px;
 }
 
-section.headphone-mark-two div figcaption h3 {
+section.headphone-mark-two figure figcaption h3 {
     text-transform: uppercase;
     font-size: 2.5em;
 }
 
-section.headphone-mark-two div figcaption p {
+section.headphone-mark-two figure figcaption p,
+.content .features p,
+.content .box .box-content {
     font-size: 0.9em;
 }
 
-section.headphone-mark-two div figcaption p.price {
+section.headphone-mark-two figure figcaption p.price {
     font-weight: bold;
     font-size: 1em;
 }
 
-section.headphone-mark-two div figcaption button {
+section.headphone-mark-two figure figcaption button {
     display: inline;
 }
 
-section.headphone-mark-two div figcaption div {
+section.headphone-mark-two figure figcaption div {
     display: flex;
     justify-content: flex-start;
 }
 
-section.headphone-mark-two div figcaption div div.quantity {
+section.headphone-mark-two figure figcaption div div.quantity {
     height: 50px;
     display: flex;
     justify-content: space-around;
@@ -144,7 +147,50 @@ section.headphone-mark-two div figcaption div div.quantity {
     width: 100px;
 }
 
-section.headphone-mark-two div figcaption div div.quantity span {
+section.headphone-mark-two figure figcaption div div.quantity span {
     color: $primary-color;
     margin: auto;
+}
+
+
+/* ----- Features and Box ----- */
+
+.content {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+}
+
+.content .features {
+    width: 55%;
+}
+
+.content .features p {
+    line-height: 23px;
+}
+
+.content .box {
+    width: 45%;
+}
+
+.content .box .box-content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .box .box-content p {
+    margin-bottom: 0;
+}
+
+.content .box .box-content p span {
+    margin-right: 20px;
+}
+
+.content .box .box-content h3,
+.content .features h3 {
+    text-transform: uppercase;
+    font-size: 2.2em;
 }
