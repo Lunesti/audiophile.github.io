@@ -83,14 +83,14 @@ section.payment-info form .checkout p {
 }
 section.payment-info form .checkout div:nth-child(2) .form-control,
 section.payment-info form .checkout .shipping-info .form-control {
-  padding: 0.475rem 3rem !important;
+  padding: 0.475rem 4.5rem !important;
   padding-left: 1.5rem !important;
 }
 section.payment-info form .checkout .billing-detail div:nth-child(3) {
   margin-top: 20px;
 }
 section.payment-info form .checkout .shipping-info div:nth-child(1) input {
-  padding: 1rem 13rem !important;
+  padding: 1rem 25rem !important;
   padding-left: 1.5rem !important;
   margin-bottom: 20px;
 }
