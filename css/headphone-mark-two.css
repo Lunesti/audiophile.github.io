@@ -35,30 +35,24 @@ main {
 header {
   position: relative;
 }
-
-nav {
-  justify-content: space-between;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  padding: 0;
-  text-transform: uppercase;
-}
-
-nav li {
-  padding-right: 20px;
-}
-
-nav {
+header nav {
   display: flex;
   align-items: center;
   position: absolute;
   z-index: 999;
   width: 70%;
   left: 15%;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  text-transform: uppercase;
+}
+header nav ul li {
+  padding-right: 20px;
 }
 
 section.headphone-mark-two {
@@ -66,53 +60,45 @@ section.headphone-mark-two {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
-section .return-to-home {
+section.headphone-mark-two .return-to-home {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0;
   color: grey;
 }
-
-section.headphone-mark-two figure {
-  display: flex;
-  justify-content: space-between;
-}
-
-section.headphone-mark-two figure figcaption {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  text-align: left;
-}
-
-section.headphone-mark-two figure figcaption span {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: orange;
-}
-
 section.headphone-mark-two figure {
   display: flex;
   justify-content: space-between;
   margin: 0;
   border-radius: 10px;
 }
-
-section.headphone-mark-two figure figcaption,
 section.headphone-mark-two figure img {
   width: 45%;
   border-radius: 10px;
 }
-
+section.headphone-mark-two figure figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  width: 45%;
+  border-radius: 10px;
+}
+section.headphone-mark-two figure figcaption p {
+  font-size: 0.9em;
+}
 section.headphone-mark-two figure figcaption h3 {
   text-transform: uppercase;
   font-size: 2.5em;
 }
+section.headphone-mark-two figure figcaption span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: orange;
+}
 
-section.headphone-mark-two figure figcaption p,
 .content .features p,
 .content .box .box-content {
   font-size: 0.9em;
@@ -196,41 +182,29 @@ section.images {
   margin-top: 100px;
   justify-content: space-between;
 }
-
 section.images div {
   width: 43%;
   height: 100%;
 }
-
 section.images figure {
   height: 100%;
   width: 58%;
+  margin: 0;
 }
-
-section.images div figure {
-  width: 100%;
-}
-
-section.images div figure img,
 section.images figure img {
+  width: 100%;
   border-radius: 10px;
 }
-
-section.images div figure img {
-  width: 95%;
-}
-
-section.images div figure img:nth-child(2) {
+section.images figure img:nth-child(2) {
   margin-top: 5%;
 }
-
-section.images figure img {
-  width: 100%;
-}
-
-section.images figure,
 section.images div figure {
+  width: 100%;
   margin: 0;
+}
+section.images div figure img {
+  width: 95%;
+  border-radius: 10px;
 }
 
 section.other-product h3 {
@@ -346,16 +320,14 @@ footer {
   display: flex;
   position: relative;
 }
-
 footer div .border {
   position: absolute;
   top: 0;
   width: 90px;
   height: 5px;
-  background-color: yellow;
+  background-color: orange;
   left: 15%;
 }
-
 footer div:nth-child(1) {
   margin-left: 15%;
   height: 100%;
@@ -364,15 +336,6 @@ footer div:nth-child(1) {
   flex-direction: column;
   justify-content: center;
 }
-
-footer div.nav-contact {
-  width: 35%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 footer div:nth-child(1) p:nth-child(2) {
   font-weight: 700;
   color: #fff;
@@ -380,25 +343,28 @@ footer div:nth-child(1) p:nth-child(2) {
   margin: 0;
   width: 110px;
 }
-
-footer div .copyright {
+footer div:nth-child(1) .copyright {
   color: rgba(255, 255, 255, 0.3);
   font-weight: 700;
 }
-
-footer div .audiophile {
+footer div:nth-child(1) .audiophile {
   color: rgba(255, 255, 255, 0.3);
   font-size: 0.9em;
 }
-
-footer div ul {
+footer div:nth-child(2) {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer div:nth-child(2) ul {
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
   list-style: none;
 }
-
-footer div ul li {
+footer div:nth-child(2) ul li {
   color: #fff;
   font-size: 0.9em;
   font-weight: 700;
@@ -406,15 +372,12 @@ footer div ul li {
   text-align: right;
   padding-left: 25px;
 }
-
-footer div.social-network {
+footer div:nth-child(2) .social-network {
   display: flex;
   justify-content: flex-end;
   color: white;
 }
-
-footer div.social-network:nth-child(2),
-footer div.social-network:nth-child(2) {
+footer div:nth-child(2) .social-network:nth-child(2) {
   visibility: hidden;
 }
 

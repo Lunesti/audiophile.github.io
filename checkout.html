@@ -2,109 +2,83 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/checkout.css">
 
-  <title>Frontend Mentor | Audiophile e-commerce website</title>
+
+    <title>Frontend Mentor | Audiophile e-commerce website</title>
 </head>
 
 <body>
-  Home
-  Headphones
-  Speakers
-  Earphones
+    <header>
+        <nav class='d-flex justify-content-between align-items-center'>
+            <p class='logo'>audiophile</p>
+            <ul class='d-flex justify-content-center'>
+                <li>home</li>
+                <li>headphones</li>
+                <li>speakers</li>
+                <li>earphones</li>
+            </ul>
+            <p>image</p>
+        </nav>
 
-  
-  <!-- Cart Modal -->
-  Cart(3)
-  Remove All
+    </header>
 
-  XX99 MK II x1
-  $2,999
-  
-  XX59 x2
-  $899
-  
-  YX1 x1
-  $599
-  
-  Total $5,396
+    <main>
+        <section class='payment-info'>
+            <p class='return-to-home'><a href="index.html">Go back</a></p>
+            <form class='d-flex justify-content-between'>
 
-  Checkout
-  <!-- Cart modal end -->
+                <div class='checkout d-flex justify-content-between flex-wrap'>
+                    <div>
+                        <h3>checkout</h3>
+                        <p>billing details</p>
+                    </div>
+                    <div class="form-group w-100 d-flex justify-content-between flex-wrap billing-detail">
+                        <div> <label class="text text-dark font-weight-bold" for="text">Name : </label><input type="text" class="form-control input-size" name="username" value="Alexel Ward" required>
+                        </div>
+                        <div> <label class="text text-dark font-weight-bold" for="text">Email Address : </label><input type="mail" class="form-control input-size text-muted" name="email" value="Alexei@gmail.com" required>
+                        </div>
+                        <div> <label class="text text-dark font-weight-bold" for="tel">Phone Number </label><input type="tel" class="form-control input-size text-muted" name="number" value="+1202-555-0136" required>
+                        </div>
+                    </div>
+                    <p>shipping info</p>
 
-  
-  Go back
+                    <div class="form-group w-100 d-flex justify-content-between flex-wrap shipping-info">
+                        <div> <label class="text text-dark font-weight-bold" for="text">Email Address : </label><input type="mail" class="form-control input-size text-muted" name="email" value="Alexei@gmail.com" required>
+                        </div>
+                        <div> <label class="text text-dark font-weight-bold" for="text">ZIP code : </label><input type="number" class="form-control input-size" name="username" value="10001" required>
+                        </div>
+                        <div> <label class="text text-dark font-weight-bold" for="text">City : </label><input type="text" class="form-control input-size text-muted" name="email" value="New York" required>
+                        </div>
+                        <div> <label class="text text-dark font-weight-bold" for="text">Country </label><input type="text" class="form-control input-size text-muted" name="number" value="United States" required>
+                        </div>
+                    </div>
 
-  Checkout
+                    <p>payment details</p>
 
-  Billing details
-  Name
-  Email address
-  Phone number
-
-  Shipping info
-  Address
-  ZIP code
-  City
-  Country
-
-  Payment details
-  Payment method
-  e-Money
-  Cash on delivery
-  e-Money number
-  e-money PIN
-
-  The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives 
-  at your residence. Just make sure your address is correct so that your order will not be cancelled.
-
-  Summary
-  XX99 MK II x1
-  $2,999
-
-  XX59 x2
-  $899
-
-  YX1 x1
-  $599
-
-  Total $5,396
-  Shipping $10
-  VAT $120
-
-  Grand total $5,526
-
-  Continue & pay
+                    <div class="w-100">
+                        <div class='d-flex flex-wrap'> <label class="text text-dark font-weight-bold d-flex justify-content-between w-50" for="text">Payment Method </label>
+                            <label for="rad1" class='form-control input-size font-weight-bold d-flex justify-content-start align-items-center align-self-end w-50'>
+                            <input id="rad1" type="radio" name="check" class="form-check input-size text-muted w-25" checked="checked">e-Money </label>
+                            <label for="rad2" class='form-control input-size font-weight-bold d-flex justify-content-start align-items-center w-50 payment-delivery'>
+                            <input  id="rad2" type="radio" name="check"  class="form-check input-size text-muted w-25">Cash on Delivery </label>
 
 
-  <!-- Success Modal -->
-  Thank you for your order
-  You will receive an email confirmation shortly.
-
-  XX99 MK II x 1
-  $2,999
-  and 2 other item(s)
-
-  Grand total
-  $5,526
-
-  Back to home
-  <!-- End success modal -->
+                        </div>
+                    </div>
+                </div>
 
 
-  Home
-  Headphones
-  Speakers
-  Earphones
-
-  Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
-  and sound specialists who are devoted to helping you get the most out of personal audio. Come and
-  visit our demo facility - we’re open 7 days a week.
-
-  Copyright 2021. All Rights Reserved
+                </div>
+                <aside></aside>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>

@@ -35,85 +35,71 @@
     
     header {
         position: relative;
-    }
-    
-    nav {
-        justify-content: space-between;
-    }
-    
-    nav ul {
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        padding: 0;
-        text-transform: uppercase;
-    }
-    
-    nav li {
-        padding-right: 20px;
-    }
-    
-    nav {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        z-index: 999;
-        width: 70%;
-        left: 15%;
+        nav {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            z-index: 999;
+            width: 70%;
+            left: 15%;
+            justify-content: space-between;
+            ul {
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                padding: 0;
+                text-transform: uppercase;
+                li {
+                    padding-right: 20px;
+                }
+            }
+        }
     }
     
     section.headphone-mark-two {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        .return-to-home {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: 0;
+            color: grey;
+        }
+        figure {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            border-radius: 10px;
+            img {
+                width: 45%;
+                border-radius: 10px;
+            }
+            figcaption {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                text-align: left;
+                width: 45%;
+                border-radius: 10px;
+                p {
+                    font-size: 0.9em;
+                }
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 2.5em;
+                }
+                span {
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    color: orange;
+                }
+            }
+        }
     }
     
-    section .return-to-home {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        margin: 0;
-        color: grey;
-    }
-    
-    section.headphone-mark-two figure {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    section.headphone-mark-two figure figcaption {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        text-align: left;
-    }
-    
-    section.headphone-mark-two figure figcaption span {
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        color: orange;
-    }
-    
-    section.headphone-mark-two figure {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        border-radius: 10px;
-    }
-    
-    section.headphone-mark-two figure figcaption,
-    section.headphone-mark-two figure img {
-        width: 45%;
-        border-radius: 10px;
-    }
-    
-    section.headphone-mark-two figure figcaption h3 {
-        text-transform: uppercase;
-        font-size: 2.5em;
-    }
-    
-    section.headphone-mark-two figure figcaption p,
     .content .features p,
     .content .box .box-content {
         font-size: 0.9em;
@@ -196,42 +182,30 @@
         display: flex;
         margin-top: 100px;
         justify-content: space-between;
-    }
-    
-    section.images div {
-        width: 43%;
-        height: 100%;
-    }
-    
-    section.images figure {
-        height: 100%;
-        width: 58%;
-    }
-    
-    section.images div figure {
-        width: 100%;
-    }
-    
-    section.images div figure img,
-    section.images figure img {
-        border-radius: 10px;
-    }
-    
-    section.images div figure img {
-        width: 95%;
-    }
-    
-    section.images div figure img:nth-child(2) {
-        margin-top: 5%;
-    }
-    
-    section.images figure img {
-        width: 100%;
-    }
-    
-    section.images figure,
-    section.images div figure {
-        margin: 0;
+        div {
+            width: 43%;
+            height: 100%;
+        }
+        figure {
+            height: 100%;
+            width: 58%;
+            margin: 0;
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+            img:nth-child(2) {
+                margin-top: 5%;
+            }
+        }
+        div figure {
+            width: 100%;
+            margin: 0;
+            img {
+                width: 95%;
+                border-radius: 10px;
+            }
+        }
     }
     
     section.other-product {
@@ -345,76 +319,64 @@
         background: #000;
         display: flex;
         position: relative;
-    }
-    
-    footer div .border {
-        position: absolute;
-        top: 0;
-        width: 90px;
-        height: 5px;
-        background-color: yellow;
-        left: 15%;
-    }
-    
-    footer div:nth-child(1) {
-        margin-left: 15%;
-        height: 100%;
-        width: 35%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    footer div.nav-contact {
-        width: 35%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        ;
-    }
-    
-    footer div:nth-child(1) p:nth-child(2) {
-        font-weight: 700;
-        color: $primary-color;
-        font-size: 1.4em;
-        margin: 0;
-        width: 110px;
-    }
-    
-    footer div .copyright {
-        color: $white-opacity;
-        font-weight: 700;
-    }
-    
-    footer div .audiophile {
-        color: $white-opacity;
-        font-size: 0.9em;
-    }
-    
-    footer div ul {
-        display: flex;
-        justify-content: flex-end;
-        text-decoration: none;
-        list-style: none;
-    }
-    
-    footer div ul li {
-        color: $primary-color;
-        font-size: 0.9em;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-align: right;
-        padding-left: 25px;
-    }
-    
-    footer div.social-network {
-        display: flex;
-        justify-content: flex-end;
-        color: white;
-    }
-    
-    footer div.social-network:nth-child(2),
-    footer div.social-network:nth-child(2) {
-        visibility: hidden;
+        div .border {
+            position: absolute;
+            top: 0;
+            width: 90px;
+            height: 5px;
+            background-color: orange;
+            left: 15%;
+        }
+        div:nth-child(1) {
+            margin-left: 15%;
+            height: 100%;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p:nth-child(2) {
+                font-weight: 700;
+                color: $primary-color;
+                font-size: 1.4em;
+                margin: 0;
+                width: 110px;
+            }
+            .copyright {
+                color: $white-opacity;
+                font-weight: 700;
+            }
+            .audiophile {
+                color: $white-opacity;
+                font-size: 0.9em;
+            }
+        }
+        div:nth-child(2) {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                text-decoration: none;
+                list-style: none;
+                li {
+                    color: $primary-color;
+                    font-size: 0.9em;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-align: right;
+                    padding-left: 25px;
+                }
+            }
+            .social-network {
+                display: flex;
+                justify-content: flex-end;
+                color: white;
+            }
+            .social-network:nth-child(2) {
+                visibility: hidden;
+            }
+        }
     }

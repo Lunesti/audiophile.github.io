@@ -1,0 +1,121 @@
+body {
+    background: #F1F1F1;
+    width: 1440px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+nav {
+    background: #000;
+    height: 100px;
+}
+
+
+/* ---- couleur --- */
+
+$primary-color: #fff;
+nav ul,
+nav p {
+    color: $primary-color;
+}
+
+$white-opacity: rgba(255, 255, 255, 0.3);
+* {
+    font-family: arial, sans-serif;
+}
+
+main {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
+
+
+/* ----- Header ----- */
+
+header {
+    position: relative;
+    nav {
+        position: absolute;
+        z-index: 999;
+        width: 70%;
+        left: 15%;
+        ul {
+            list-style: none;
+            padding: 0;
+            text-transform: uppercase;
+            li {
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+section.payment-info {
+    .return-to-home {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+        color: grey;
+    }
+    width: 100%;
+    height: auto;
+    form {
+        width: 100%;
+        .checkout {
+            background-color: $primary-color;
+            width: 65%;
+            height: auto;
+            border-radius: 10px;
+            padding: 5%;
+            h3,
+            p {
+                text-transform: uppercase;
+                text-align: left;
+            }
+            p {
+                font-size: 0.9em;
+                font-weight: 700;
+                color: orange;
+                margin-top: 40px;
+            }
+            div:nth-child(2),
+            .shipping-info {
+                .form-control {
+                    padding: .475rem 3rem !important;
+                }
+            }
+            .billing-detail div:nth-child(3) {
+                margin-top: 20px;
+            }
+            .shipping-info div:nth-child(1) input {
+                padding: 1rem 13rem !important;
+                margin-bottom: 20px;
+            }
+            .shipping-info div:nth-child(2) input {
+                margin-bottom: 20px;
+            }
+            .payment-delivery {
+                margin-left: 50%;
+            }
+            input,
+            label {
+                font-size: 0.9em;
+            }
+            input[type="radio"]:checked+label {
+                font-weight: bold;
+            }
+        }
+        aside {
+            width: 30%;
+            height: 500px;
+            background-color: $primary-color;
+            border-radius: 10px;
+        }
+    }
+}
