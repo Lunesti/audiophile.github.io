@@ -37,14 +37,52 @@
                     <h3>xx99 mark II headphones</h3>
                     <p>The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your prenium headphones experience by reproducing the balanced depth and precision of studio-quality sound.
                     </p>
-                    <p class='price'>$ 2,999</p>
+                    <p class='price'></p>
                     <div>
                         <div class='quantity'>
-                            <span> - </span>
-                            <span> 1 </span>
-                            <span> + </span>
+                            <span class='remove'> - </span>
+                            <span class='numberOfItems'>0 </span>
+                            <span class='add'> + </span>
                         </div>
-                        <button><a href="#">see product</a></button>
+                        <button id="myBtn"><a href="#">add to card</a></button>
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+
+                                <aside>
+                                    <span class="close">&times;</span>
+                                    <p class='summary'>summary</p>
+                                    <figure><img src="assets/cart/image-xx99-mark-two-headphones.jpg" alt="">
+                                        <figcaption>
+                                            <p>xx99 mk ii</p>
+                                            <p>$ 2,999</p>
+                                        </figcaption>
+                                        <span>x1</span>
+                                    </figure>
+
+                                    <figure><img src="assets/cart/image-xx99-mark-two-headphones.jpg" alt="">
+                                        <figcaption>
+                                            <p>xx99 mk ii</p>
+                                            <p>$ 2,999</p>
+                                        </figcaption>
+                                        <span>x1</span>
+                                    </figure>
+
+                                    <figure><img src="assets/cart/image-xx99-mark-two-headphones.jpg" alt="">
+                                        <figcaption>
+                                            <p>xx99 mk ii</p>
+                                            <p>$ 2,999</p>
+                                        </figcaption>
+                                        <span>x1</span>
+                                    </figure>
+                                    <p>total <span>$ 5,396</span></p>
+
+                                    <button><a href="product-xx99-mark-two-headphones.html">continue & pay</a></button>
+                                </aside>
+                            </div>
+
+                        </div>
                     </div>
 
                 </figcaption>
@@ -160,7 +198,7 @@
                 <li>speakers</li>
                 <li>earphones</li>
             </ul>
-            <p>texte</p>
+            <p class='hidden'>texte</p>
             <div class='social-network'>
                 <p>
                     <a href="#">icone</a>
@@ -174,10 +212,11 @@
 
             </div>
 
-            <p>texte</p>
+            <p class='hidden'>texte</p>
         </div>
 
     </footer>
+    <script src='js/Product.js'></script>
 </body>
 
 </html>

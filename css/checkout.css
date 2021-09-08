@@ -1,5 +1,5 @@
 body {
-  background: #F1F1F1;
+  background: #f1f1f1;
   width: 1440px;
   margin: auto;
 }
@@ -109,9 +109,119 @@ section.payment-info form .checkout input[type=radio]:checked + label {
 }
 section.payment-info form aside {
   width: 30%;
-  height: 500px;
+  height: 550px;
   background-color: #fff;
   border-radius: 10px;
+  padding: 3%;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+section.payment-info form aside .summary {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+section.payment-info form aside figure {
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.payment-info form aside figure img {
+  width: 100%;
+  max-width: 70px;
+  height: auto;
+  border-radius: 10px;
+}
+section.payment-info form aside figure span {
+  float: right;
+}
+section.payment-info form aside figure figcaption p {
+  margin: 0;
+  margin-right: 50px;
+}
+section.payment-info form aside figure figcaption p p:first-child {
+  font-weight: 700;
+}
+section.payment-info form aside figure figcaption p:first-child {
+  font-weight: 700;
+}
+section.payment-info form aside p {
+  margin-bottom: 3px;
+}
+section.payment-info form aside p span {
+  float: right;
+  font-weight: 700;
+}
+
+/* --- footer ---- */
+footer {
+  width: 100%;
+  height: 300px;
+  background: #000;
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+}
+footer div .border {
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 5px;
+  background-color: orange;
+  left: 15%;
+}
+footer div:nth-child(1) {
+  margin-left: 15%;
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer div:nth-child(1) p:nth-child(2) {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.4em;
+  margin: 0;
+  width: 110px;
+}
+footer div:nth-child(1) .copyright {
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 700;
+}
+footer div:nth-child(1) .audiophile {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.9em;
+}
+footer div:nth-child(2) {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer div:nth-child(2) ul {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style: none;
+}
+footer div:nth-child(2) ul li {
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right;
+  padding-left: 25px;
+}
+footer div:nth-child(2) .social-network {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+footer div:nth-child(2) .hidden {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=checkout.css.map */
