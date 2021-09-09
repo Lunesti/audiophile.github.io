@@ -93,11 +93,6 @@ section.headphone-product figure figcaption h3 {
   text-transform: uppercase;
   font-size: 2.5em;
 }
-section.headphone-product figure figcaption span {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: orange;
-}
 section.headphone-product figure figcaption div .quantity {
   height: 50px;
   display: flex;
@@ -119,7 +114,7 @@ section.headphone-product figure figcaption div .quantity span.add {
   cursor: pointer;
 }
 section.headphone-product figure figcaption button {
-  background: #D77D49;
+  background: #C69076;
   width: 170px;
   margin-left: 20px;
   border: none;
@@ -136,7 +131,7 @@ section.headphone-product figure figcaption button a {
   font-size: 0.9em;
 }
 
-section.headphone-product figure figcaption p.price {
+section.headphone-product figure figcaption p.headphone-price {
   font-weight: bold;
   font-size: 1em;
 }
@@ -469,6 +464,7 @@ aside figure {
   padding-bottom: 8px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 aside figure img {
@@ -496,6 +492,15 @@ aside p {
 aside p span {
   float: right;
   font-weight: 700;
+  letter-spacing: 0px;
+}
+aside .pay {
+  background: #C69076;
+  width: 170px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: none;
+  height: 50px;
 }
 
 /*# sourceMappingURL=headphone-mark-two.css.map */

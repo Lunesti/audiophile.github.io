@@ -1,499 +1,520 @@
-    body {
-        background: #fff;
-        width: 1440px;
-        margin: auto;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    header,
+body {
+    background: #fff;
+    width: 1440px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+nav {
+    background: #000;
+    height: 100px;
+}
+
+
+/* ---- couleur --- */
+
+$primary-color: #fff;
+nav ul,
+nav p {
+    color: $primary-color;
+}
+
+$white-opacity: rgba(255, 255, 255, 0.3);
+* {
+    font-family: arial, sans-serif;
+}
+
+main {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
+
+
+/* ----- Header ----- */
+
+header {
+    position: relative;
     nav {
-        background: #000;
-        height: 100px;
-    }
-    /* ---- couleur --- */
-    
-    $primary-color: #fff;
-    nav ul,
-    nav p {
-        color: $primary-color;
-    }
-    
-    $white-opacity: rgba(255, 255, 255, 0.3);
-    * {
-        font-family: arial, sans-serif;
-    }
-    
-    main {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 999;
         width: 70%;
-        height: auto;
-        margin-left: 15%;
-    }
-    /* ----- Header ----- */
-    
-    header {
-        position: relative;
-        nav {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            z-index: 999;
-            width: 70%;
-            left: 15%;
-            justify-content: space-between;
-            ul {
-                display: flex;
-                list-style: none;
-                justify-content: center;
-                padding: 0;
-                text-transform: uppercase;
-                li {
-                    padding-right: 20px;
-                }
-            }
-        }
-    }
-    
-    section.headphone-product {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        .return-to-home {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            margin: 0;
-            color: grey;
-        }
-        figure {
-            display: flex;
-            justify-content: space-between;
-            margin: 0;
-            border-radius: 10px;
-            img {
-                width: 45%;
-                border-radius: 10px;
-            }
-            figcaption {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: left;
-                text-align: left;
-                width: 45%;
-                border-radius: 10px;
-                p {
-                    font-size: 0.9em;
-                }
-                h3 {
-                    text-transform: uppercase;
-                    font-size: 2.5em;
-                }
-                span {
-                    text-transform: uppercase;
-                    letter-spacing: 5px;
-                    color: orange;
-                }
-                div .quantity {
-                    height: 50px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    background: #F1F1F1;
-                    width: 130px;
-                    span.remove,
-                    span.items,
-                    span.add {
-                        color: #000;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    span.remove,
-                    span.add {
-                        cursor: pointer;
-                    }
-                }
-                button {
-                    background: #D77D49;
-                    width: 170px;
-                    margin-left: 20px;
-                    border: none;
-                    a {
-                        text-decoration: none;
-                        color: #FFF;
-                        text-transform: uppercase;
-                        font-size: 0.9em;
-                    }
-                }
-            }
-        }
-    }
-    
-    .content .features p,
-    .content .box .box-content {
-        font-size: 0.9em;
-    }
-    
-    section.headphone-product figure figcaption p.price {
-        font-weight: bold;
-        font-size: 1em;
-    }
-    
-    section.headphone-product figure figcaption button {
-        display: inline;
-    }
-    
-    section.headphone-product figure figcaption div {
-        display: flex;
-        justify-content: flex-start;
-    }
-    
-    section.headphone-product figure figcaption div div.quantity span {
-        color: $primary-color;
-        margin: auto;
-    }
-    /* ----- Features and Box ----- */
-    
-    .content {
-        margin-top: 100px;
-        display: flex;
-        width: 100%;
-    }
-    
-    .content .features {
-        width: 55%;
-    }
-    
-    .content .features p {
-        line-height: 23px;
-    }
-    
-    .content .box {
-        width: 45%;
-    }
-    
-    .content .box .box-content {
-        width: 60%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .content .box .box-content p {
-        margin-bottom: 0;
-    }
-    
-    .content .box .box-content p span {
-        margin-right: 20px;
-    }
-    
-    .content .box .box-content h3,
-    .content .features h3 {
-        text-transform: uppercase;
-        font-size: 2.2em;
-    }
-    /* ----- les 3 images ----- */
-    
-    section.images {
-        width: 100%;
-        height: 600px;
-        display: flex;
-        margin-top: 100px;
+        left: 15%;
         justify-content: space-between;
-        div {
-            width: 43%;
-            height: 100%;
-        }
-        figure {
-            height: 100%;
-            width: 58%;
-            margin: 0;
-            img {
-                width: 100%;
-                border-radius: 10px;
-            }
-            img:nth-child(2) {
-                margin-top: 5%;
-            }
-        }
-        div figure {
-            width: 100%;
-            margin: 0;
-            img {
-                width: 95%;
-                border-radius: 10px;
-            }
-        }
-    }
-    
-    section.other-product {
-        h3 {
-            text-align: center;
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
             text-transform: uppercase;
-        }
-        .products {
-            display: flex;
-            justify-content: space-between;
-            figure {
-                margin: 0;
-                width: 30%;
-                img {
-                    width: 100%;
-                    border-radius: 10px;
-                }
-                figcaption {
-                    text-transform: uppercase;
-                    text-align: center;
-                    margin: auto;
-                }
+            li {
+                padding-right: 20px;
             }
         }
     }
-    /* ---- Shop ---- */
-    
-    section.shop {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
+}
+
+section.headphone-product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .return-to-home {
         width: 100%;
-        height: 400px;
-        figure {
-            position: relative;
-            display: flex;
-            align-items: center;
-            margin: auto;
-            justify-content: space-between;
-            height: 400px;
-            img {
-                position: absolute;
-                top: 60%;
-                left: 50%;
-                /* à 50%/50% du parent référent */
-                transform: translate(-50%, -50%);
-                /* décalage de 50% de sa propre taille */
-                z-index: 10;
-                width: 90%;
-                height: auto;
-            }
-            figcaption {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 315px;
-                height: 50%;
-                background: #F1F1F1;
-                border-radius: 10px;
-                margin-top: 200px;
-                p:nth-child(1) {
-                    margin-top: 100px;
-                }
-                p:nth-child(2) {
-                    margin: 0;
-                }
-            }
-        }
-        figure:nth-child(1),
-        figure:nth-child(3) {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+        color: grey;
     }
-    /* ---- 3ieme et 4ieme bannière ---- */
-    
-    .products-description {
-        margin: 100px auto;
+    figure {
         display: flex;
         justify-content: space-between;
-        img,
+        margin: 0;
+        border-radius: 10px;
+        img {
+            width: 45%;
+            border-radius: 10px;
+        }
         figcaption {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: left;
             text-align: left;
-            width: 48%;
+            width: 45%;
             border-radius: 10px;
-            span {
-                color: #C69076;
+            p {
+                font-size: 0.9em;
             }
             h3 {
                 text-transform: uppercase;
                 font-size: 2.5em;
             }
-            p {
-                font-size: 0.9em;
-                width: 90%;
-                margin-right: 10%;
-                line-height: 25px;
-            }
-        }
-    }
-    /* --- footer ---- */
-    
-    footer {
-        width: 100%;
-        height: 300px;
-        background: #000;
-        display: flex;
-        position: relative;
-        div .border {
-            position: absolute;
-            top: 0;
-            width: 90px;
-            height: 5px;
-            background-color: orange;
-            left: 15%;
-        }
-        div:nth-child(1) {
-            margin-left: 15%;
-            height: 100%;
-            width: 35%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            p:nth-child(2) {
-                font-weight: 700;
-                color: $primary-color;
-                font-size: 1.4em;
-                margin: 0;
-                width: 110px;
-            }
-            .copyright {
-                color: $white-opacity;
-                font-weight: 700;
-            }
-            .audiophile {
-                color: $white-opacity;
-                font-size: 0.9em;
-            }
-        }
-        div:nth-child(2) {
-            width: 35%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            ul {
+            div .quantity {
+                height: 50px;
                 display: flex;
-                justify-content: flex-end;
-                text-decoration: none;
-                list-style: none;
-                li {
-                    color: $primary-color;
-                    font-size: 0.9em;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    text-align: right;
-                    padding-left: 25px;
+                justify-content: space-between;
+                align-items: center;
+                background: #F1F1F1;
+                width: 130px;
+                span.remove,
+                span.items,
+                span.add {
+                    color: #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                span.remove,
+                span.add {
+                    cursor: pointer;
                 }
             }
-            .social-network {
-                display: flex;
-                justify-content: flex-end;
-                color: white;
-            }
-            .hidden {
-                visibility: hidden;
+            button {
+                background: #C69076;
+                width: 170px;
+                margin-left: 20px;
+                border: none;
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                    text-transform: uppercase;
+                    font-size: 0.9em;
+                }
             }
         }
     }
-    /* The Modal (background) */
-    
-    #myModal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        padding-top: 100px;
-        /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
+}
+
+.content .features p,
+.content .box .box-content {
+    font-size: 0.9em;
+}
+
+section.headphone-product figure figcaption p.headphone-price {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+section.headphone-product figure figcaption button {
+    display: inline;
+}
+
+section.headphone-product figure figcaption div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section.headphone-product figure figcaption div div.quantity span {
+    color: $primary-color;
+    margin: auto;
+}
+
+
+/* ----- Features and Box ----- */
+
+.content {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+}
+
+.content .features {
+    width: 55%;
+}
+
+.content .features p {
+    line-height: 23px;
+}
+
+.content .box {
+    width: 45%;
+}
+
+.content .box .box-content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .box .box-content p {
+    margin-bottom: 0;
+}
+
+.content .box .box-content p span {
+    margin-right: 20px;
+}
+
+.content .box .box-content h3,
+.content .features h3 {
+    text-transform: uppercase;
+    font-size: 2.2em;
+}
+
+
+/* ----- les 3 images ----- */
+
+section.images {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    div {
+        width: 43%;
         height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-        .modal-content {
-            /* Modal Content */
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 20%;
-            .close {
-                /* The Close Button */
-                color: #aaaaaa;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-            .close:hover,
-            .close:focus {
-                color: #000;
-                text-decoration: none;
-                cursor: pointer;
-            }
-            aside figure img {
-                display: none;
-            }
+    }
+    figure {
+        height: 100%;
+        width: 58%;
+        margin: 0;
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        img:nth-child(2) {
+            margin-top: 5%;
         }
     }
-    
-    aside {
+    div figure {
         width: 100%;
-        height: auto;
-        background-color: $primary-color;
-        border-radius: 10px;
-        padding: 3%;
-        text-transform: uppercase;
-        font-size: 0.9em;
-        .summary {
-            font-weight: 700;
-            font-size: 1.2em;
-            margin-bottom: 30px;
+        margin: 0;
+        img {
+            width: 95%;
+            border-radius: 10px;
         }
+    }
+}
+
+section.other-product {
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .products {
+        display: flex;
+        justify-content: space-between;
         figure {
-            padding-bottom: 8px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            margin: 0;
+            width: 30%;
             img {
                 width: 100%;
-                max-width: 70px;
-                height: auto;
                 border-radius: 10px;
             }
-            span {
-                float: right;
-            }
-            figcaption p {
-                margin: 0;
-                margin-right: 50px;
-                p:first-child {
-                    font-weight: 700;
-                }
-            }
-            figcaption p:first-child {
-                font-weight: 700;
-            }
-        }
-        p {
-            margin-bottom: 3px;
-            span {
-                float: right;
-                font-weight: 700;
+            figcaption {
+                text-transform: uppercase;
+                text-align: center;
+                margin: auto;
             }
         }
     }
+}
+
+
+/* ---- Shop ---- */
+
+section.shop {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    figure {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: space-between;
+        height: 400px;
+        img {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            /* à 50%/50% du parent référent */
+            transform: translate(-50%, -50%);
+            /* décalage de 50% de sa propre taille */
+            z-index: 10;
+            width: 90%;
+            height: auto;
+        }
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 315px;
+            height: 50%;
+            background: #F1F1F1;
+            border-radius: 10px;
+            margin-top: 200px;
+            p:nth-child(1) {
+                margin-top: 100px;
+            }
+            p:nth-child(2) {
+                margin: 0;
+            }
+        }
+    }
+    figure:nth-child(1),
+    figure:nth-child(3) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+
+/* ---- 3ieme et 4ieme bannière ---- */
+
+.products-description {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    img,
+    figcaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        width: 48%;
+        border-radius: 10px;
+        span {
+            color: #C69076;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 0.9em;
+            width: 90%;
+            margin-right: 10%;
+            line-height: 25px;
+        }
+    }
+}
+
+
+/* --- footer ---- */
+
+footer {
+    width: 100%;
+    height: 300px;
+    background: #000;
+    display: flex;
+    position: relative;
+    div .border {
+        position: absolute;
+        top: 0;
+        width: 90px;
+        height: 5px;
+        background-color: orange;
+        left: 15%;
+    }
+    div:nth-child(1) {
+        margin-left: 15%;
+        height: 100%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p:nth-child(2) {
+            font-weight: 700;
+            color: $primary-color;
+            font-size: 1.4em;
+            margin: 0;
+            width: 110px;
+        }
+        .copyright {
+            color: $white-opacity;
+            font-weight: 700;
+        }
+        .audiophile {
+            color: $white-opacity;
+            font-size: 0.9em;
+        }
+    }
+    div:nth-child(2) {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            text-decoration: none;
+            list-style: none;
+            li {
+                color: $primary-color;
+                font-size: 0.9em;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: right;
+                padding-left: 25px;
+            }
+        }
+        .social-network {
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+    }
+}
+
+
+/* The Modal (background) */
+
+#myModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    .modal-content {
+        /* Modal Content */
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%;
+        .close {
+            /* The Close Button */
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        aside figure img {
+            display: none;
+        }
+    }
+}
+
+aside {
+    width: 100%;
+    height: auto;
+    background-color: $primary-color;
+    border-radius: 10px;
+    padding: 3%;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    .summary {
+        font-weight: 700;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    figure {
+        padding-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        img {
+            width: 100%;
+            max-width: 70px;
+            height: auto;
+            border-radius: 10px;
+        }
+        span {
+            float: right;
+        }
+        figcaption p {
+            margin: 0;
+            margin-right: 50px;
+            p:first-child {
+                font-weight: 700;
+            }
+        }
+        figcaption p:first-child {
+            font-weight: 700;
+        }
+    }
+    p {
+        margin-bottom: 3px;
+        span {
+            float: right;
+            font-weight: 700;
+            letter-spacing: 0px;
+        }
+    }
+    .pay {
+        background: #C69076;
+        width: 170px;
+        margin-left: 20px;
+        margin-top: 20px;
+        border: none;
+        height: 50px;
+    }
+}
