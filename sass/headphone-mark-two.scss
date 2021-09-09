@@ -56,7 +56,7 @@
         }
     }
     
-    section.headphone-mark-two {
+    section.headphone-product {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -96,6 +96,38 @@
                     letter-spacing: 5px;
                     color: orange;
                 }
+                div .quantity {
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #F1F1F1;
+                    width: 130px;
+                    span.remove,
+                    span.items,
+                    span.add {
+                        color: #000;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    span.remove,
+                    span.add {
+                        cursor: pointer;
+                    }
+                }
+                button {
+                    background: #D77D49;
+                    width: 170px;
+                    margin-left: 20px;
+                    border: none;
+                    a {
+                        text-decoration: none;
+                        color: #FFF;
+                        text-transform: uppercase;
+                        font-size: 0.9em;
+                    }
+                }
             }
         }
     }
@@ -105,31 +137,21 @@
         font-size: 0.9em;
     }
     
-    section.headphone-mark-two figure figcaption p.price {
+    section.headphone-product figure figcaption p.price {
         font-weight: bold;
         font-size: 1em;
     }
     
-    section.headphone-mark-two figure figcaption button {
+    section.headphone-product figure figcaption button {
         display: inline;
     }
     
-    section.headphone-mark-two figure figcaption div {
+    section.headphone-product figure figcaption div {
         display: flex;
         justify-content: flex-start;
     }
     
-    section.headphone-mark-two figure figcaption div div.quantity {
-        height: 50px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: grey;
-        border-radius: 5px;
-        width: 100px;
-    }
-    
-    section.headphone-mark-two figure figcaption div div.quantity span {
+    section.headphone-product figure figcaption div div.quantity span {
         color: $primary-color;
         margin: auto;
     }
@@ -422,6 +444,9 @@
                 color: #000;
                 text-decoration: none;
                 cursor: pointer;
+            }
+            aside figure img {
+                display: none;
             }
         }
     }

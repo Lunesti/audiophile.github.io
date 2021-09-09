@@ -55,29 +55,29 @@ header nav ul li {
   padding-right: 20px;
 }
 
-section.headphone-mark-two {
+section.headphone-product {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-section.headphone-mark-two .return-to-home {
+section.headphone-product .return-to-home {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0;
   color: grey;
 }
-section.headphone-mark-two figure {
+section.headphone-product figure {
   display: flex;
   justify-content: space-between;
   margin: 0;
   border-radius: 10px;
 }
-section.headphone-mark-two figure img {
+section.headphone-product figure img {
   width: 45%;
   border-radius: 10px;
 }
-section.headphone-mark-two figure figcaption {
+section.headphone-product figure figcaption {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,17 +86,49 @@ section.headphone-mark-two figure figcaption {
   width: 45%;
   border-radius: 10px;
 }
-section.headphone-mark-two figure figcaption p {
+section.headphone-product figure figcaption p {
   font-size: 0.9em;
 }
-section.headphone-mark-two figure figcaption h3 {
+section.headphone-product figure figcaption h3 {
   text-transform: uppercase;
   font-size: 2.5em;
 }
-section.headphone-mark-two figure figcaption span {
+section.headphone-product figure figcaption span {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: orange;
+}
+section.headphone-product figure figcaption div .quantity {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F1F1F1;
+  width: 130px;
+}
+section.headphone-product figure figcaption div .quantity span.remove,
+section.headphone-product figure figcaption div .quantity span.items,
+section.headphone-product figure figcaption div .quantity span.add {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.headphone-product figure figcaption div .quantity span.remove,
+section.headphone-product figure figcaption div .quantity span.add {
+  cursor: pointer;
+}
+section.headphone-product figure figcaption button {
+  background: #D77D49;
+  width: 170px;
+  margin-left: 20px;
+  border: none;
+}
+section.headphone-product figure figcaption button a {
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 .content .features p,
@@ -104,31 +136,21 @@ section.headphone-mark-two figure figcaption span {
   font-size: 0.9em;
 }
 
-section.headphone-mark-two figure figcaption p.price {
+section.headphone-product figure figcaption p.price {
   font-weight: bold;
   font-size: 1em;
 }
 
-section.headphone-mark-two figure figcaption button {
+section.headphone-product figure figcaption button {
   display: inline;
 }
 
-section.headphone-mark-two figure figcaption div {
+section.headphone-product figure figcaption div {
   display: flex;
   justify-content: flex-start;
 }
 
-section.headphone-mark-two figure figcaption div div.quantity {
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: grey;
-  border-radius: 5px;
-  width: 100px;
-}
-
-section.headphone-mark-two figure figcaption div div.quantity span {
+section.headphone-product figure figcaption div div.quantity span {
   color: #fff;
   margin: auto;
 }
@@ -424,6 +446,9 @@ footer div:nth-child(2) .hidden {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+#myModal .modal-content aside figure img {
+  display: none;
 }
 
 aside {

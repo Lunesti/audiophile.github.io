@@ -24,17 +24,85 @@ window.onclick = function(event) {
     }
 }
 
-/*
-const add = document.querySelector('.add');
 const remove = document.querySelector('.remove');
-const items = document.querySelector('.numberOfItems');
-const price = document.querySelector('.price');
+const items = document.querySelector('.items');
+const add = document.querySelector('.add');
+const addToCard = document.querySelector('.addToCard');
+let price = document.querySelector('.price');
 
-const headphoneMark2 = ['10']
+const product = document.querySelector('.product');
+const numberOfProducts = document.querySelector('.numberOfProducts');
 
-for (let i = 0; i < headphoneMark2.length; i++) {
-    items.textContent = 0;
-    add.addEventListener('click', function() {
-        items.textContent = i++;
-    })
-}*/
+const headphoneMarkTwoImg = document.querySelector('.headphone-mark-two');
+
+const total = document.querySelector('.total');
+
+
+
+items.textContent = 0;
+
+const shoppingList = [{
+        product: 'headphone',
+        quantity: 25,
+        price: 2999
+    },
+    {
+        product: 'earphone',
+        quantity: 28,
+        price: 110
+    },
+    {
+        product: 'speakers',
+        quantity: 14,
+        price: 98
+    }
+];
+
+console.log(shoppingList[0].quantity);
+
+if (shoppingList[0]) {
+    price.textContent = shoppingList[0].price
+}
+
+
+// Lorsqu'on clique sur ajouter, on ajoute un produit et on soustrait de un la quantité
+
+// Lorsqu'on ajoute une quantité, on multiplie le prix par 2
+
+add.addEventListener('click', function() {
+    if (shoppingList[0]) {
+        items.textContent++;
+        const totalPrice = parseInt(price.textContent) + shoppingList[0].price;
+        price.textContent = totalPrice;
+
+        // price.textContent = totalPrice;
+        numberOfProducts.textContent = 'x' + items.textContent;
+        numberOfProducts.style.color = '#000';
+        shoppingList[0].quantity--;
+        console.log(shoppingList[0].quantity);
+        if (shoppingList[0].quantity === 0) {
+            alert('Maximum atteint !');
+        }
+        headphoneMarkTwoImg.style.display = 'block';
+        product.textContent = 'xx99 mk ii';
+    }
+});
+
+remove.addEventListener('click', function() {
+    if (shoppingList[0]) {
+        items.textContent--
+            const totalPrice = parseInt(price.textContent) - shoppingList[0].price;
+        price.textContent = totalPrice;
+
+        // price.textContent = totalPrice;
+        numberOfProducts.textContent = 'x' + items.textContent;
+        numberOfProducts.style.color = '#000';
+        shoppingList[0].quantity--;
+        console.log(shoppingList[0].quantity);
+        if (shoppingList[0].quantity === 0) {
+            alert('Veuillez sélectionner au moins un produit !');
+        }
+        headphoneMarkTwoImg.style.display = 'block';
+        product.textContent = 'xx99 mk ii';
+    }
+});
