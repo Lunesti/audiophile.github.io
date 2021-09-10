@@ -61,28 +61,35 @@ const shoppingList = [{
 console.log(shoppingList[0].quantity);
 
 if (shoppingList[0]) {
-    price.textContent = shoppingList[0].price
+    price.textContent = 0;
 }
-
-
-// Lorsqu'on clique sur ajouter, on ajoute un produit et on soustrait de un la quantité
 
 // Lorsqu'on ajoute une quantité, on multiplie le prix par 2
 
 add.addEventListener('click', function() {
     if (shoppingList[0]) {
+
+        // On ajoute un produit à chaque clique
         items.textContent++;
+
+        // On enlève à chaque fois une quantité du produit
+        shoppingList[0].quantity--;
+
+        if (shoppingList[0].quantity === 0) {
+
+        }
+
+        // On multiplie le nombre de produits disponbile par son prix
         const totalPrice = parseInt(price.textContent) + shoppingList[0].price;
+        // Le prix affiché correspond au nombre de produit choisi
         price.textContent = totalPrice;
 
         // price.textContent = totalPrice;
         numberOfProducts.textContent = 'x' + items.textContent;
         numberOfProducts.style.color = '#000';
-        shoppingList[0].quantity--;
-        console.log(shoppingList[0].quantity);
-        if (shoppingList[0].quantity === 0) {
-            alert('Maximum atteint !');
-        }
+
+
+
         headphoneMarkTwoImg.style.display = 'block';
         product.textContent = 'xx99 mk ii';
     }
@@ -90,8 +97,8 @@ add.addEventListener('click', function() {
 
 remove.addEventListener('click', function() {
     if (shoppingList[0]) {
-        items.textContent--
-            const totalPrice = parseInt(price.textContent) - shoppingList[0].price;
+        items.textContent--;
+        const totalPrice = parseInt(price.textContent) - shoppingList[0].price;
         price.textContent = totalPrice;
 
         // price.textContent = totalPrice;

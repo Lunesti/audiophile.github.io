@@ -7,6 +7,17 @@ body {
 
 a {
   text-decoration: none;
+  color: #FFF;
+}
+
+button {
+  background: #DA7C48;
+  width: 170px;
+  height: 50px;
+  margin-left: 20px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 header,
@@ -113,13 +124,7 @@ section.headphone-product figure figcaption div .quantity span.remove,
 section.headphone-product figure figcaption div .quantity span.add {
   cursor: pointer;
 }
-section.headphone-product figure figcaption button {
-  background: #C69076;
-  width: 170px;
-  margin-left: 20px;
-  border: none;
-}
-section.headphone-product figure figcaption button a {
+section.headphone-product figure figcaption a {
   text-decoration: none;
   color: #FFF;
   text-transform: uppercase;
@@ -282,7 +287,11 @@ section.shop figure figcaption {
   height: 50%;
   background: #F1F1F1;
   border-radius: 10px;
-  margin-top: 200px;
+  margin-top: 230px;
+}
+section.shop figure figcaption .name-product {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 section.shop figure figcaption p:nth-child(1) {
   margin-top: 100px;
@@ -495,12 +504,7 @@ aside p span {
   letter-spacing: 0px;
 }
 aside .pay {
-  background: #C69076;
-  width: 170px;
-  margin-left: 20px;
   margin-top: 20px;
-  border: none;
-  height: 50px;
 }
 
 /*# sourceMappingURL=headphone-mark-two.css.map */

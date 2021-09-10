@@ -1,87 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="css/headphone-mark-two.css">
 
-  <title>Frontend Mentor | Audiophile e-commerce website</title>
+
+    <title>Frontend Mentor | Audiophile e-commerce website</title>
 </head>
 
 <body>
-  Home
-  Headphones
-  Speakers
-  Earphones
+    <header>
+        <nav>
+            <p class='logo'>audiophile</p>
+            <ul>
+                <li>home</li>
+                <li>headphones</li>
+                <li>speakers</li>
+                <li>earphones</li>
+            </ul>
+            <p>image</p>
+        </nav>
 
-  Go back
+    </header>
+    <main>
+        <section class='headphone-product'>
+            <p class='return-to-home'><a href="index.html">Go back</a></p>
 
-  XX99 Mark I Headphones
+            <figure>
+                <img src="assets\product-xx99-mark-one-headphones\desktop\image-product.jpg" alt="">
+                <figcaption>
+                    <span>new product</span>
+                    <h3>XX99 Mark I Headphones</h3>
+                    <p> As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.
+                    </p>
+                    <p class='headphone-price'>$1,750</p>
+                    <div>
+                        <div class='quantity'>
+                            <span class='remove'> -</span>
+                            <span class='items'></span>
+                            <span class='add'> + </span>
+                        </div>
+                        <button id="myBtn" class='addToCard'><a href="#">add to cart</a></button>
 
-  As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate 
-  audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios 
-  and on the go.
+                        <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                            <div class=" modal-content ">
 
-  $1,750
-  1
-  Add to cart
+                                <aside>
+                                    <span class="close ">&times;</span>
+                                    <p class='summary'>summary</p>
+                                    <figure><img class='headphone-mark-two' src="assets/cart/image-xx99-mark-two-headphones.jpg " alt=" ">
+                                        <figcaption>
+                                            <p class='product'></p>
+                                            <p></p>
+                                        </figcaption>
+                                        <span class='numberOfProducts'></span>
+                                    </figure>
 
-  Features
-  As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades 
-  of audio expertise, redefining the critical listening experience. This pair of closed-back headphones 
-  are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.
+                                    <p class='total'>total : <span class='price'></span><span> $ </span></p>
 
-  From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, 
-  the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers 
-  up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. 
-  For connectivity, a specially tuned cable is included with a balanced gold connector.
 
-  In the box
-  
-  1x Headphone unit
-  2x Replacement earcups
-  1x User manual
-  1x 3.5mm 5m audio cable
-  
-  You may also like
-  
-  XX99 Mark II
-  See product
-  
-  XX59
-  See product
-  
-  ZX9 speaker
-  See product
+                                    <button class='myBtn pay'><a href="product-xx99-mark-two-headphones.html ">continue & pay</a></button>
+                                </aside>
+                            </div>
 
-  Headphones
-  Shop
-  
-  Speakers
-  Shop
-  
-  Earphones
-  Shop
-  
-  Bringing you the best audio gear
-  Located at the heart of New York City, Audiophile is the premier store for high end headphones,
-  earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration
-  rooms available for you to browse and experience a wide range of our products. Stop by our store
-  to meet some of the fantastic people who make Audiophile the best place to buy your portable
-  audio equipment.
+                        </div>
+                    </div>
 
-  Home
-  Headphones
-  Speakers
-  Earphones
+                </figcaption>
+            </figure>
+        </section>
+        <section class='content'>
+            <div class='features'>
+                <h3>features</h3>
+                <p> As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade
+                    materials to emphasize durability at a relatively light weight of 11 oz.
+                </p>
+                <p> From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise
+                    cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is included with a balanced gold connector.
+                </p>
+            </div>
+            <div class='box'>
+                <div class='box-content'>
+                    <h3>in the box</h3>
+                    <p><span>1x </span>Headphone unit</p>
+                    <p><span>2x </span> Replacement Earcups</p>
+                    <p><span>1x </span> User Manual</p>
+                    <p><span>1x </span>3.5mm 5m audio cable</p>
 
-  Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
-  and sound specialists who are devoted to helping you get the most out of personal audio. Come and
-  visit our demo facility - we’re open 7 days a week.
+                </div>
+            </div>
+        </section>
+        <section class='images'>
+            <div>
+                <figure>
+                    <img src="assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg " alt=" ">
+                    <img src="assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg " alt=" ">
+                </figure>
+            </div>
+            <figure>
+                <img src="assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg " alt=" ">
+            </figure>
+        </section>
 
-  Copyright 2021. All Rights Reserved
+        <section class='other-product'>
+            <h3>you may also like</h3>
+            <div class='products'>
+                <figure><img src="assets/product-xx99-mark-two-headphones/desktop/image-product.jpg " alt=" ">
+                    <figcaption>
+                        <h4> xx99 mark ii</h4>
+                        <button><a href="# ">see product</a></button>
+
+                    </figcaption>
+                </figure>
+                <figure><img src="assets/product-xx59-headphones/desktop/image-product.jpg " alt=" ">
+                    <figcaption>
+                        <h4>xx59</h4>
+                        <button><a href="# ">see product</a></button>
+
+                    </figcaption>
+                </figure>
+                <figure><img src="assets/cart/image-zx9-speaker.jpg " alt=" ">
+                    <figcaption>
+                        <h4>zx9-speaker</h4>
+                        <button><a href="# ">see product</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class='shop'>
+            <figure>
+                <img src="assets/shared/desktop/image-headphones.png " alt="headphone casque ">
+                <figcaption>
+                    <p class='name-product'>headphone</p>
+                    <p>shop <a href="headphone-mark2.html "> > </a></p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="assets/shared/desktop/image-speakers.png " alt="speakers enceinte ">
+                <figcaption>
+                    <p class='name-product'>speakers</p>
+                    <p>shop <a href="# "> > </a></p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="assets/shared/desktop/image-earphones.png " alt="earphone ">
+                <figcaption>
+                    <p class='name-product'>earphone</p>
+                    <p>shop <a href="# "> > </a></p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <figure class='products-description'>
+            <figcaption>
+                <h3>bringing you the <span>best</span> audio gear</h3>
+                <p>Located at the heart of the New York City, Audiophile is the premier store for high end headphones, earphones, speakers and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience
+                    a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+            </figcaption>
+            <img src="assets/shared/desktop/image-best-gear.jpg " alt=" ">
+
+        </figure>
+    </main>
+
+    <footer>
+        <div>
+            <span class='border'></span>
+            <p>audiophile</p>
+            <p class='audiophile'>Audiophile is an all in one stop fullfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we're open 7 days a
+                week.
+            </p>
+            <p class='copyright'>Copyright 2021. All Right Reserved</p>
+        </div>
+        <div>
+            <ul>
+                <li>home</li>
+                <li>headphones</li>
+                <li>speakers</li>
+                <li>earphones</li>
+            </ul>
+            <p class='hidden'>texte</p>
+            <div class='social-network'>
+                <p>
+                    <a href="# ">icone</a>
+                </p>
+                <p>
+                    <a href="# ">icone</a>
+                </p>
+                <p>
+                    <a href="# ">icone</a>
+                </p>
+
+            </div>
+
+            <p class='hidden'>texte</p>
+        </div>
+
+    </footer>
+    <script src='js/Product.js'></script>
 </body>
 
 </html>
